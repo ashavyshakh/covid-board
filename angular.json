@@ -8,6 +8,18 @@
       "schematics": {
         "@schematics/angular:application": {
           "strict": true
+        },
+        "@schematics/angular:component": {
+          "style": "scss",
+          "changeDetection": "Default",
+          "export": false,
+          "flat": false,
+          "inlineStyle": false,
+          "inlineTemplate": false,
+          "module": "",
+          "prefix": "",
+          "skipImport": false,
+          "viewEncapsulation": "Emulated"
         }
       },
       "root": "",
@@ -27,7 +39,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss"
+              
             ],
             "scripts": []
           },
@@ -94,7 +108,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss"
+              
             ],
             "scripts": []
           }
