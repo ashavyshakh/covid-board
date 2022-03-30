@@ -1,12 +1,27 @@
-<mat-sidenav-container *ngIf = "this.router.url !== '/'">
-  <mat-sidenav #sidenav mode="side" opened class="example-sidenav"
-  [fixedInViewport]="options.value.fixed" [fixedTopGap]="options.value.top"
-  [fixedBottomGap]="options.value.bottom">
-{{options.value.fixed ? 'Fixed' : 'Non-fixed'}} Sidenav
-</mat-sidenav>
-  <mat-sidenav-content>
-    <div style="height: 88vh;">
+<div id="smo-container" class="wrapper">
+  <mat-sidenav-container *ngIf = "this.router.url !== '/'">
+    <mat-sidenav #sidenav mode="side" opened class="example-sidenav"
+    [fixedInViewport]="options.value.fixed" [fixedTopGap]="options.value.top"
+    [fixedBottomGap]="options.value.bottom">
+    <div [ngClass]="{'left-hightlight': selectedMenu === '1'}" class="align-self-center highlighter">
     </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>
-<router-outlet></router-outlet>
+    <div class="dashboard" (click) = "selectMenu('1')" >
+      <img class="dashboard" width="25" height="25" src="../assets/images/dashboard.png">
+    </div>
+    <div [ngClass]="{'left-hightlight': selectedMenu === '2'}" class="align-self-center highlighter">
+    </div>
+    <div class="flag"  (click) = "selectMenu('2')">
+      <img class="flag" width="25" height="25" src="../assets/images/flag.png">
+    </div>
+    <div class="log-out"  (click) = "selectMenu('3')">
+      <img class="log-out" width="25" height="25" src="../assets/images/turn-off.png">
+    </div>
+   
+  </mat-sidenav>
+    <mat-sidenav-content>
+      
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <router-outlet></router-outlet>
+</div>
+

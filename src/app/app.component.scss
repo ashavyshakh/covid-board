@@ -1,0 +1,33 @@
+.example-sidenav{
+    background-color: blue;
+    width: 45px;
+}
+.dashboard , .flag{
+    margin-top: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.left-hightlight {
+   // background-color:#75ecd1;
+   // margin-bottom: 5px;
+  }
+  
+  .highlighter {
+    height: 35px;
+    width: 5px;
+  }
+  .log-out{
+      margin-top: 180px;
+      margin-left: 3px;
+      cursor: pointer;
+  }
+  .wrapper{
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    height: calc(100vh - 60px);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 0 3.125rem;
+    overflow: hidden;
+  }

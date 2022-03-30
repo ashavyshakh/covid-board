@@ -1,0 +1,68 @@
+{
+    "result" : [
+        {
+            "name" : "Afganisthan",
+            "totalCase" : 228800,
+            "death":200000,
+            "recovered": 200000,
+            "test": 3400000,
+            "population": "30m"
+        },
+        {
+            "name" : "Albania",
+            "totalCase" : 228800,
+            "death":200000,
+            "recovered": 200000,
+            "test": 3400000,
+            "population": "30m"
+        },
+        {
+            "name" : "Afganisthan",
+            "totalCase" : 228800,
+            "death":200000,
+            "recovered": 200000,
+            "test": 3400000,
+            "population": "30m"
+        },
+        {
+            "name" : "Albania",
+            "totalCase" : 228800,
+            "death":200000,
+            "recovered": 200000,
+            "test": 3400000,
+            "population": "30m"
+        },
+        {
+            "name" : "Afganisthan",
+            "totalCase" : 228800,
+            "death":200000,
+            "recovered": 200000,
+            "test": 3400000,
+            "population": "30m"
+        },
+        {
+            "name" : "Albania",
+            "totalCase" : 228800,
+            "death":200000,
+            "recovered": 200000,
+            "test": 3400000,
+            "population": "30m"
+        },
+        {
+            "name" : "Afganisthan",
+            "totalCase" : 228800,
+            "death":200000,
+            "recovered": 200000,
+            "test": 3400000,
+            "population": "30m"
+        },
+        {
+            "name" : "Albania",
+            "totalCase" : 228800,
+            "death":200000,
+            "recovered": 200000,
+            "test": 3400000,
+            "population": "30m"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "result" : [
+        {
+            "type" : "total",
+            "totalCase" : 228800,
+            "death":200000,
+            "recovered": 200000
+        },
+        {
+            "type" : "today",
+            "totalCase" : 228800,
+            "death":200000,
+            "recovered": 200000
+        }
+    ]
+}

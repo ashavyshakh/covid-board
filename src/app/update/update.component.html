@@ -1,1 +1,45 @@
-<p>update works!</p>
+<div class="edit-container">
+    <div class="display-item mt-30">
+        <div class="title-grey float-left"> EDIT {{currentItem?.name}}</div>
+        <div class="border float-right position-align">
+        </div>
+    </div>
+    <div class="card-alignment mt-30">
+        <mat-card>
+            <form class="example-form">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Cases</mat-label>
+                  <input matInput placeholder="name" value="{{currentItem?.totalCase}}">
+                </mat-form-field>
+              
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Deaths</mat-label>
+                    <input matInput placeholder="" value="{{currentItem?.death}}">
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Recovered</mat-label>
+                    <input matInput placeholder="name" value="{{currentItem?.recovered}}">
+                  </mat-form-field>
+                
+                  <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>Tests</mat-label>
+                      <input matInput placeholder="" value="{{currentItem?.test}}">
+                    </mat-form-field>
+              </form>
+              
+             
+        </mat-card>
+        <div class="button-group">
+            <div>
+                <button mat-raised-button>Cancel</button>
+            </div>
+            
+            <div class="ml-10">
+                <button  mat-raised-button color="primary">Save</button>
+            </div>
+            
+          </div>
+
+    </div>
+    
+</div>

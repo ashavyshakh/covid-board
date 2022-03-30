@@ -1,3 +1,68 @@
-<div class="dashboard-container">
+<div class="dashboard-container" *ngIf = "covidListTotal && covidListToday">
+    <div class="display-item ">
+        <div class="title-grey float-left"> Total</div>
+        <div class="border float-right position-align">
+        </div>
+    </div>
+    <div class="d-flex margin-left">
+        <div class="total align-item ml-3">
+            <div class="card-title">
+                Total Cases
+            </div>
+            <div class="count">
+                {{covidListTotal[0].totalCase}}
+            </div>
+          </div>
+          <div class="total align-item ml-3">
+              <div class="card-title">
+                  Total Deaths
+              </div>
+              <div class="count">
+                  {{covidListTotal[0].death}}
+              </div>
+            </div>
+            <div class="total align-item ml-3">
+              <div class="card-title">
+                  Total Recovered
+              </div>
+              <div class="count">
+                  {{covidListTotal[0].recovered}}
+              </div>
+            </div>
+    </div>
+   
+    <div class="display-item ">
+    <div class="title-grey float-left"> Today</div>
+    <div class="border float-right position-align">
+    </div>
+    </div>
+    <div class="d-flex margin-left">
+        <div class="today align-item ml-3">
+            <div class="card-title">
+                Total Cases
+            </div>
+            <div class="count">
+                {{covidListToday[0].totalCase}}
+            </div>
+        </div>
+        <div class="today align-item ml-3">
+              <div class="card-title">
+                  Total Deaths
+              </div>
+              <div class="count">
+                  {{covidListToday[0].death}}
+              </div>
+        </div>
+        <div class="today align-item ml-3">
+              <div class="card-title">
+                  Total Recovered
+              </div>
+              <div class="count">
+                  {{covidListToday[0].recovered}}
+              </div>
+        </div>
+    </div>
+   
+   
 
 </div>

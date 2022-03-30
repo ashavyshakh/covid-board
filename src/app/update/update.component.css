@@ -1,0 +1,14 @@
+.card-alignment{
+    margin: auto;
+    width: 550px;
+}
+.button-group{
+    display: flex;
+    justify-content: end;
+    margin-top: 11px;
+}
+.edit-container{
+    font-family: 'Open-Sans-Regular';
+    height: 100vh;
+    width: 100%;
+}

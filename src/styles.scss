@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+body {    
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.dashboard-container{
+    font-family: 'Open-Sans-Regular';
+    height: 100vh;
+    width: 100%;
+}
+.title-grey{
+    font-size: 20px;
+    color: gray;
+    font-weight: bolder;
+    margin-right: 4px;
+}
+.border{
+    border-bottom: 1.5px solid #80808066;
+    width: 800px;
+}
+.display-item{
+    display: inline-block;
+    position: relative;
+    left: 60px;
+}
+.total,.today{
+    width: 160px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    box-shadow: 0 0 5px #333333a3;
+}
+.align-item{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.position-align{
+    position: relative;
+    top: 10px;
+}
+.float-left{
+    float: left;
+   }
+ .float-right{
+    float: right;
+   
+   }
+   .card-title{
+       color: blue;
+       font-size: 18px;
+       margin-top: 20px;
+   }
+.count{
+    color: blue;
+    font-weight: bolder;
+    font-size: 25px;
+
+}
+.d-flex{
+    display: flex;
+    justify-content: start;
+}
+.ml-3{
+    margin-left: 30px;
+}
+.margin-left{
+    margin-left: 60px;
+}
+@font-face {
+    font-family: 'Open-Sans-Regular';
+    src: url("./assets/fonts/OpenSans/OpenSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  .mt-30{
+      margin-top: 30px;
+  }
+  .ml-10{
+    margin-left: 10px;
+}
+.mt-5{
+    margin-top: 5px;
+}

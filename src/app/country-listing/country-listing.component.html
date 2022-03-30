@@ -1,1 +1,33 @@
-<p>country-listing works!</p>
+<div class="list-container" *ngIf = "covidListTotal">
+    <div class="d-flex ml-3">
+        <div class="title-grey mt-30 float-left"> Countries</div>
+    </div>
+    <div class="mt-30">
+        <div class="d-flex wrap-item ml-3">
+            <ng-container *ngFor = "let item of covidListTotal">
+                <div class="today card-height align-item ml-3">
+                    <div class="row-1 content-align d-flex">
+                       <div class="country-flag ml-10"><img src="../../assets/images/ag.svg"
+                         width="45" height="45"></div>
+                       <div class="country-name mt-5">{{item.name}}</div>
+                    </div>
+                    <div class="row-2 d-flex">
+                       <div class="margin-item text-align"><div div class="text-align">Cases</div><div class="font-weight">{{item.totalCase}}</div></div>
+                       <div class="margin-item text-align"><div div class="text-align">Deaths</div><div class="font-weight">{{item.death}}</div></div>
+                       <div class="margin-item text-align"><div div class="text-align">Recovered</div><div class="font-weight">{{item.recovered}}</div></div>
+                    </div>
+                    <div class="row-3 d-flex">
+                        <div class="margin-item text-align"><div div class="text-align">Test</div><div class="font-weight">{{item.test}}</div></div>
+                       <div class="margin-item text-align"><div div class="text-align">Population</div><div class="font-weight">{{item.population}}</div></div>
+                       <div class="margin-item text-align edit-icon cursor">
+                           <img (click) = "edit(item)" src="../../assets/images/edit.png" width="40" height="40"></div>
+                       
+                    </div>
+                </div>
+            </ng-container>
+            
+           
+        </div>
+    </div>
+    
+</div>
